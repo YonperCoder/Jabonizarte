@@ -164,7 +164,7 @@ main .sec1 {
     /* display: flex; */
     width: 60%;
     /* justify-content: flex-end; */
-    background-image: url(/img/fondo_index.jpg);
+    /* background-image: url(/img/fondo_index.jpg); */
     background-position: right;
     background-repeat: no-repeat;
 }
