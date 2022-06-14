@@ -52,6 +52,7 @@ header {
     border-radius: 5px;
     padding: 5px;
     margin-left: 30px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
 .menu a {
@@ -221,17 +222,45 @@ main .sec3 {
 }
 
 /* ----------------------- CONTACTO-MAIN ----------------------*/
-.form {
+.todo{
+    display: flex;
+    justify-content: center;
     padding: 30px;
+    background-image: url(/img/fondo_mix.jpg);
+    background-size: cover;
+    background-position: bottom;
+} 
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+}
+
+.form label{
+    text-align: left;
+}
+
+.form btnConfirmar{
+    align-items: center;
 }
 
 .manito {
     cursor: pointer;
 }
 
+.faq{
+    margin-left: 20px;
+}
+
 /* ----------------------- JABONIZARTE-MAIN ----------------------*/
 .jabonizarte {
     padding: 20px;
+    background-image: url(/img/fondo_mix.jpg);
+    background-size: cover;
+    background-position: bottom;
+    /* background-color: red; */
 }
 
 .bold {
@@ -241,22 +270,26 @@ main .sec3 {
 
 .sombrear {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    background-color: white;
-    padding: 10px;
+    background-color: rgb(255 255 255 / 80%);
+    padding: 20px;
     border-radius: 6px;
 }
 
 /* ----------------------- MI-CUENTA-MAIN ----------------------*/
-.main {
+.micuenta {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
 }
 
-.main h2,
-.main h3 {
+.micuenta h2,
+.micuenta h3 {
     margin: 10px;
     text-align: center;
+}
+
+i{
+    margin-bottom: 5px;
 }
 
 .gridOptions {
@@ -268,6 +301,7 @@ main .sec3 {
     ;
     margin: 20px;
     color: white;
+    width: 30%;
 }
 
 .esc {
