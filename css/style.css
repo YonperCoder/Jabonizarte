@@ -165,7 +165,7 @@ main .sec1 {
     /* display: flex; */
     width: 60%;
     /* justify-content: flex-end; */
-    background-image: url("/img/fondo_index.jpg");
+    background-image: url("../img/fondo_index.jpg");
     background-position: right;
     background-repeat: no-repeat;
 }
@@ -226,7 +226,7 @@ main .sec3 {
     display: flex;
     justify-content: center;
     padding: 30px;
-    background-image: url("/img/fondo_mix.jpg");
+    background-image: url("../img/fondo_mix.jpg");
     background-size: cover;
     background-position: bottom;
 } 
@@ -257,7 +257,7 @@ main .sec3 {
 /* ----------------------- JABONIZARTE-MAIN ----------------------*/
 .jabonizarte {
     padding: 20px;
-    background-image: url("/img/fondo_mix.jpg");
+    background-image: url("../img/fondo_mix.jpg");
     background-size: cover;
     background-position: bottom;
     /* background-color: red; */
