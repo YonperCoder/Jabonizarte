@@ -1,157 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/shortcut.png">
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://kit.fontawesome.com/d9a0db298f.js" crossorigin="anonymous"></script>
-    <title>Jabonizarte | Naturalmente Artesanal</title>
-  </head>
-  <!-- Notas Importantes: -->
-  <!-- las etiquetas siempre en minuscula -->
-  <!-- FIGMA: para pasar de Sketch a Wireframe -->
-  <!-- PARA COMENTAR: CONTROL + } -->
-  <!-- Format Document: SHIF + ALT + F -->
 
-  <body>
-    <!-- Header: encabezado -->
-    <header>
-      <div>
-        <a href="./index.html">
-          <img src="./img/logo.png" alt="logo" />
-        </a>
-      </div>
-      <!-- Menu de navegacion -->
-      <nav>
-        <!-- ul: unorder list (lista no ordenada) -->
-        <ul class="menu">
-          <!-- li = lista de items -->
-          <li>
-            <a href="./index.html">Inicio</a>
-          </li>
-          <li>
-            <!-- Anchor: ancla -->
-            <!-- href: hipervinculo de referencia (link) -->
-            <a href="./pages/tienda.html">Tienda</a>
-          </li>
-          <li>
-            <a href="./pages/jabonizarte.html">Jabonizarte</a>
-            <!-- ol: order list (lista ordenada) -->
-            <!-- <ul class="subMenu">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/shortcut.png">
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://kit.fontawesome.com/d9a0db298f.js" crossorigin="anonymous"></script>
+  <title>Jabonizarte | Naturalmente Artesanal</title>
+</head>
+<!-- Notas Importantes: -->
+<!-- las etiquetas siempre en minuscula -->
+<!-- FIGMA: para pasar de Sketch a Wireframe -->
+<!-- PARA COMENTAR: CONTROL + } -->
+<!-- Format Document: SHIF + ALT + F -->
+
+<body>
+  <!-- Header: encabezado -->
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="logo">
+      </a>
+      <button class="toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="../pages/tienda.html" class="nav-menu-link nav-link">Tienda</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="../pages/jabonizarte.html" class="nav-menu-link nav-link">Jabonizarte</a>
+          <!-- ol: order list (lista ordenada) -->
+          <!-- <ul class="subMenu">
                         <li>Quienes Somos</li>
                         <li>Política de Privacidad</li>
                     </ul> -->
-          </li>
-          <li>
-            <a href="./pages/contacto-faq.html">Contacto-FAQ</a>
-          </li>
-          <li>
-            <a href="./pages/micuenta.html">Mi Cuenta</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Main: contenido principal -->
-    <main>
-      <section class="sec1">
-        <div class="divText">
-          <h2 class="h2">
-            Jabones Artesanales <br />
-            100% Naturales
-          </h2>
-          <button class="btnTienda">
-            <a href="./pages/tienda.html">Ver Tienda</a>
-          </button>
-        </div>
+        </li>
+        <li class="nav-menu-item">
+          <a href="../pages/contacto-faq.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto-FAQ</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="../pages/micuenta.html" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="divImg"></div>
-      </section>
-
-      <section class="sec2">
-        <div>
-          <h3>Envío Gratis</h3>
-          <h4>Sin mínimo de compra</h4>
-        </div>
-        <div>
-          <h3>Ingredientes Naturales</h3>
-          <h4>Sin aditivos sintéticos</h4>
-        </div>
-        <div>
-          <h3>Totalmente Artesanal</h3>
-          <h4>Elaborados 100% a mano</h4>
-        </div>
-        <div>
-          <h3>Eco Friendly</h3>
-          <h4>Packaging sustentable</h4>
-        </div>
-      </section>
-
-      <section class="sec3">
-        <h2>Nuestros Destacados</h2>
-        <div class="destacados">
-          <div>
-            <h3>Avena & Miel</h3>
-            <p>
-              Ideal para las pieles mas sensibles. <br />
-              Combinación natural para hidratar y revitalizar tu piel.
-            </p>
-          </div>
-          <div>
-            <h3>Cacao</h3>
-            <p>
-              Ideal para pieles secas. <br />
-              Ayuda a combatir el envejecimiento de la piel gracias a su
-              propiedad antioxidante.
-            </p>
-          </div>
-          <div>
-            <h3>Café & Almendras</h3>
-            <p>
-              Pieles secas o grasas. <br />
-              Este jabón es ideal para exfoliar tu piel, limpiar poros y
-              eliminar células muertas.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer: pie de pagina -->
-    <footer class="footer">
-      <nav>
-        <ul class="flex">
-          <li>
-            <a href="https://wa.me/094732477" target="_blank">WhatsApp</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/jabonizarte/" target="_blank">Instagram</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/jabonizarte.shop" target="_blank">Facebook</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div>
-        <a href="./index.html">
-          <img src="./img/logo.png" alt="logo" />
-        </a>
+  <!-- Main: contenido principal -->
+  <main>
+    <section class="sec1">
+      <div class="divText">
+        <h2 class="h2">
+          Jabones Artesanales <br />
+          100% Naturales
+        </h2>
+        <button class="btnTienda">
+          <a href="./pages/tienda.html">Ver Tienda</a>
+        </button>
       </div>
 
-      <nav>
-        <ul class="flex">
-            <li>
-                <a href="https://es.wikipedia.org/wiki/Dinero_en_efectivo" target="_blank">Efectivo</a>
-              </li>
-              <li>
-                <a href="https://www.mercadopago.com.uy/c/pagar-online-con-mercadopago" target="_blank">Mercado Pago</a>
-              </li>
-              <li>
-                <a href="https://es.wikipedia.org/wiki/Transferencia_bancaria" target="_blank">Transferencia Bancaria</a>
-              </li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+      <div class="divImg"></div>
+    </section>
+
+    <section class="sec2">
+      <div>
+        <h3>Envío Gratis</h3>
+        <h4>Sin mínimo de compra</h4>
+      </div>
+      <div>
+        <h3>Ingredientes Naturales</h3>
+        <h4>Sin aditivos sintéticos</h4>
+      </div>
+      <div>
+        <h3>Totalmente Artesanal</h3>
+        <h4>Elaborados 100% a mano</h4>
+      </div>
+      <div>
+        <h3>Eco Friendly</h3>
+        <h4>Packaging sustentable</h4>
+      </div>
+    </section>
+
+    <section class="sec3">
+      <h2>Nuestros Destacados</h2>
+      <div class="destacados">
+        <div>
+          <h3>Avena & Miel</h3>
+          <p>
+            Ideal para las pieles mas sensibles. <br />
+            Combinación natural para hidratar y revitalizar tu piel.
+          </p>
+        </div>
+        <div>
+          <h3>Cacao</h3>
+          <p>
+            Ideal para pieles secas. <br />
+            Ayuda a combatir el envejecimiento de la piel gracias a su
+            propiedad antioxidante.
+          </p>
+        </div>
+        <div>
+          <h3>Café & Almendras</h3>
+          <p>
+            Pieles secas o grasas. <br />
+            Este jabón es ideal para exfoliar tu piel, limpiar poros y
+            eliminar células muertas.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer: pie de pagina -->
+  <footer class="footer">
+    <nav>
+      <ul class="flex">
+        <li>
+          <a href="https://wa.me/094732477" target="_blank">WhatsApp</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jabonizarte/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/jabonizarte.shop" target="_blank">Facebook</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <a href="./index.html">
+        <img src="./img/logo.png" alt="logo" />
+      </a>
+    </div>
+
+    <nav>
+      <ul class="flex">
+        <li>
+          <a href="https://es.wikipedia.org/wiki/Dinero_en_efectivo" target="_blank">Efectivo</a>
+        </li>
+        <li>
+          <a href="https://www.mercadopago.com.uy/c/pagar-online-con-mercadopago" target="_blank">Mercado Pago</a>
+        </li>
+        <li>
+          <a href="https://es.wikipedia.org/wiki/Transferencia_bancaria" target="_blank">Transferencia Bancaria</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
 </html>

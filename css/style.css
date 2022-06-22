@@ -23,55 +23,104 @@ h4 {
 }
 
 /* ----------------------- HEADER ----------------------*/
-@media (max-width:468px) {
-
-    header {
-        position: relative;
-        background-color: red;
-    }
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.header {
     background-color: white;
+    height: 130px;
     position: fixed;
     width: 100%;
-    height: 130px;
+    top: 0;
+    left: 0;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
-.menu {
+.nav {
     display: flex;
-    align-content: center;
-    /* list-style=viñetas */
-    list-style: none;
-    background-color: green;
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: 30px;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    align-items: center;
+
 }
 
-.menu a {
+.nav-link {
     color: white;
-    padding: 4px;
-    text-transform: capitalize;
     text-decoration: none;
-    font-size: 120%;
+    background-color: green;
 }
 
-.menu a:hover {
-    color: green;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: solid;
-    text-decoration-line: underline;
-    text-decoration-color: green;
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
 }
+
+.nav-menu-item {
+    font-size: 18px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+}
+
+.nav-link:hover {
+    background-color: white;
+    transition: 0.3s;
+    color: green;
+    font-weight: bold;
+    padding: 13px;
+}
+
+/* TOGGLE */
+.toggle {
+    color: green;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .header {
+        height: 130px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: white;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .toggle {
+        display: flex;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+}
+
 
 /* ----------------------- FOOTER ----------------------*/
 footer {
@@ -221,15 +270,82 @@ main .sec3 {
     color: white;
 }
 
+@media (max-width: 768px) {
+    main .sec2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec2 div {
+        width: 90%;
+        text-align: center;
+    }
+
+    main .sec3 {
+        display: flex;
+        padding-top: 0px;
+        align-items: baseline;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .sec3 div {
+        justify-content: center;
+        width: 90%;
+        text-align: center;
+    }
+
+    .destacados {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0px;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .divImg {
+        display: none;
+    }
+
+    .h2 {
+        text-shadow: 2px 2px black;
+     }
+
+     h2 {
+        margin: 10px;
+        font-size: 200%;
+     }
+
+    .divText {
+        width: 100%;
+        padding-top: 10%;
+        background-image: url("../img/fondo_index.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }   
+
+     
+
+
+
+
+
+}
+
+
+
 /* ----------------------- CONTACTO-MAIN ----------------------*/
-.todo{
+.todo {
     display: flex;
     justify-content: center;
     padding: 30px;
     background-image: url("../img/fondo_mix.jpg");
     background-size: cover;
     background-position: bottom;
-} 
+}
 
 .form {
     display: flex;
@@ -238,11 +354,11 @@ main .sec3 {
     width: 30%;
 }
 
-.form label{
+.form label {
     text-align: left;
 }
 
-.form btnConfirmar{
+.form btnConfirmar {
     align-items: center;
 }
 
@@ -250,7 +366,7 @@ main .sec3 {
     cursor: pointer;
 }
 
-.faq{
+.faq {
     margin-left: 20px;
 }
 
@@ -288,7 +404,7 @@ main .sec3 {
     text-align: center;
 }
 
-i{
+i {
     margin-bottom: 5px;
 }
 
