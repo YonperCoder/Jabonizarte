@@ -211,9 +211,7 @@ main .sec1 {
 }
 
 .divImg {
-    /* display: flex; */
     width: 60%;
-    /* justify-content: flex-end; */
     background-image: url("../img/fondo_index.jpg");
     background-position: right;
     background-repeat: no-repeat;
@@ -270,31 +268,27 @@ main .sec3 {
     color: white;
 }
 
+/* INDEX -- MOBILE */
 @media (max-width: 768px) {
-    main .sec2 {
+    .sec2 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .sec2 div {
+    .sec2 div, .sec3 div {
+        justify-content: center;
         width: 90%;
         text-align: center;
     }
 
-    main .sec3 {
+    .sec3 {
         display: flex;
         padding-top: 0px;
         align-items: baseline;
         justify-content: center;
         flex-wrap: wrap;
         align-content: center;
-    }
-
-    .sec3 div {
-        justify-content: center;
-        width: 90%;
-        text-align: center;
     }
 
     .destacados {
@@ -319,15 +313,24 @@ main .sec3 {
         font-size: 200%;
      }
 
-    .divText {
+     .divText {
         width: 100%;
-        padding-top: 10%;
+        align-content: center;
+        text-align: center;
+        padding-top: 5%;
+        background-color: transparent;
+        filter: opacity(200%);
+    }
+
+    .sec1{
         background-image: url("../img/fondo_index.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        
     }   
 
-     
+
+ 
 
 
 
