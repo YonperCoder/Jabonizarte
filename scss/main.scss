@@ -1,0 +1,28 @@
+// RESETEO PRINCIPAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// IMPORTACION DE VARIABLES
+@import './variables/fonts';
+
+// APLICANDO FUENTE PRINCIPAL A TODO
+* {
+    font-family: $fuentePrincipal;
+}
+
+// IMPORTACION DE SECCIONES
+@import './secciones/footer';
+@import './secciones/header';
+
+// IMPORTACION DE PAGINAS
+@import './views/index';
+@import './views/contacto-faq';
+@import './views/jabonizarte';
+@import './views/tienda';
+@import './views/micuenta';
+
+// IMPORTACION DE ELEMENTOS
+@import './elements/buttons.scss';

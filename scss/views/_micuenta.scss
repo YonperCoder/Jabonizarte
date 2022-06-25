@@ -1,0 +1,48 @@
+/* ----------------------- MI-CUENTA-MAIN ----------------------*/
+.micuenta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.micuenta h2,
+.micuenta h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+i {
+    margin-bottom: 5px;
+}
+
+.gridOptions {
+    display: grid;
+    grid-template-areas:
+        "esc dir"
+        "ped aju"
+        "exit exit"
+    ;
+    margin: 20px;
+    color: white;
+    width: 30%;
+}
+
+.esc {
+    grid-area: esc;
+}
+
+.dir {
+    grid-area: dir;
+}
+
+.ped {
+    grid-area: ped;
+}
+
+.aju {
+    grid-area: aju;
+}
+
+.exit {
+    grid-area: exit;
+}
