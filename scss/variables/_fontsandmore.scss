@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 $fuentePrincipal: 'Rubik', sans-serif;
-$fondo: url("../img/fondo_mix.jpg");
+$fondo1: url("../img/fondo_index.jpg");
+$fondo2: url("../img/fondo_mix.jpg");
+$sombraCaja: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 
 h1 {
     font-size: 40px;
@@ -26,12 +28,10 @@ h4 {
 }
 
 .bold {
-    font-family: cursive;
-    color: rgb(3, 99, 3);
+    @extend %estiloBold;
 }
 
 .fondo{
-    background-image: $fondo;
-    background-size: cover;
-    background-position: bottom;
+    background-image: $fondo2;
+   @extend %estiloFondo;
 }

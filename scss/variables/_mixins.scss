@@ -1,0 +1,5 @@
+@mixin btn ($colorFondo, $padding, $borderRadius){
+    padding: $padding;
+    background-color: $colorFondo;
+    border-radius: $borderRadius;   
+}

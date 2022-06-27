@@ -22,14 +22,16 @@ h4 {
   font-weight: 600;
   color: #065206; }
 
-.bold {
-  font-family: cursive;
-  color: #036303; }
+.fondo {
+  background-image: url("../img/fondo_mix.jpg"); }
 
 .fondo {
-  background-image: url("../img/fondo_mix.jpg");
   background-size: cover;
   background-position: bottom; }
+
+.bold {
+  font-weight: bold;
+  color: #036303; }
 
 * {
   font-family: "Rubik", sans-serif; }
@@ -181,15 +183,14 @@ main {
   height: 10%;
   background-color: #054905;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); }
-
-.sec2 div {
-  width: 25%;
-  background-color: whitesmoke;
-  border-radius: 8px;
-  margin: 15px;
-  padding: 15px;
-  font-size: medium;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); }
+  .sec2 div {
+    width: 25%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 15px;
+    font-size: medium;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); }
 
 .sec3 {
   height: 30%;
@@ -203,22 +204,19 @@ main {
   margin-top: 20px;
   margin-bottom: 30px;
   height: 150px; }
-
-.destacados div {
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 20px;
-  border-radius: 8px;
-  width: 33%;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); }
-
-.destacados div:hover {
-  background-color: #054905;
-  color: white;
-  cursor: pointer; }
-
-.destacados div h3:hover {
-  color: white; }
+  .destacados div {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 33%;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); }
+    .destacados div h3:hover {
+      color: white; }
+  .destacados div:hover {
+    background-color: #054905;
+    color: white;
+    cursor: pointer; }
 
 /* MOBILE ----------------------- INDEX-MAIN ----------------------*/
 @media (max-width: 768px) {
@@ -270,12 +268,10 @@ main {
   flex-direction: column;
   text-align: center;
   width: 30%; }
-
-.form label {
-  text-align: left; }
-
-.form btnConfirmar {
-  align-items: center; }
+  .form label {
+    text-align: left; }
+  .form btnConfirmar {
+    align-items: center; }
 
 .manito {
   cursor: pointer; }
@@ -284,13 +280,12 @@ main {
   margin-left: 20px; }
 
 /* DESKTOP ----------------------- JABONIZARTE-MAIN ----------------------*/
-.jabonizarte {
+.padding {
   padding: 20px; }
 
 .sombrear {
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
   border-radius: 6px; }
 
 /* ----------------------- MI-CUENTA-MAIN ----------------------*/
@@ -325,14 +320,14 @@ i {
   grid-area: exit; }
 
 .btnTienda {
+  padding: 10px;
+  background-color: green;
+  border-radius: 10px;
   font-size: 90%;
   font-weight: bold;
-  border-radius: 10px;
   width: 25%;
-  background-color: green;
   border: none;
   margin-top: 20px;
-  padding: 10px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
   margin-bottom: 80px; }
 
@@ -348,16 +343,16 @@ i {
   text-decoration: none;
   color: white; }
 
-.boton {
-  border: solid 2px black;
-  border-radius: 10px;
-  text-align: center;
-  align-items: center;
+.btnCuenta {
   padding: 10px;
   background-color: green;
+  border-radius: 10px;
+  border: solid 2px black;
+  text-align: center;
+  align-items: center;
   margin: 8px; }
 
-.boton:hover {
+.btnCuenta:hover {
   background-color: #166116;
   cursor: pointer;
   transform: scale(1.02);
