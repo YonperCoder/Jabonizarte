@@ -4,9 +4,15 @@
   padding: 0;
   box-sizing: border-box; }
 
-h2 {
+h1 {
   font-size: 40px;
-  color: #036303; }
+  color: #036303;
+  text-shadow: 2px 1px black; }
+
+h2 {
+  font-size: 30px;
+  color: #036303;
+  font-weight: bolder; }
 
 h3 {
   font-weight: bolder;
@@ -19,6 +25,11 @@ h4 {
 .bold {
   font-family: cursive;
   color: #036303; }
+
+.fondo {
+  background-image: url("../img/fondo_mix.jpg");
+  background-size: cover;
+  background-position: bottom; }
 
 * {
   font-family: "Rubik", sans-serif; }
@@ -137,6 +148,11 @@ footer nav ul li a:hover {
   .nav-menu_visible {
     left: 0; } }
 
+.subHeader {
+  display: flex;
+  justify-content: center;
+  padding: 20px; }
+
 /* DESKTOP ----------------------- INDEX-MAIN ----------------------*/
 main {
   align-content: center;
@@ -231,11 +247,6 @@ main {
     margin-left: 10px; }
   .divImg {
     display: none; }
-  .h2 {
-    text-shadow: 2px 2px black; }
-  h2 {
-    margin: 10px;
-    font-size: 200%; }
   .divText {
     width: 100%;
     align-content: center;
@@ -252,10 +263,7 @@ main {
 .todo {
   display: flex;
   justify-content: center;
-  padding: 30px;
-  background-image: url("../img/fondo_mix.jpg");
-  background-size: cover;
-  background-position: bottom; }
+  padding: 20px; }
 
 .form {
   display: flex;
@@ -277,10 +285,7 @@ main {
 
 /* DESKTOP ----------------------- JABONIZARTE-MAIN ----------------------*/
 .jabonizarte {
-  padding: 20px;
-  background-image: url("../img/fondo_mix.jpg");
-  background-size: cover;
-  background-position: bottom; }
+  padding: 20px; }
 
 .sombrear {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
@@ -293,11 +298,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.micuenta h2,
-.micuenta h3 {
-  margin: 10px;
-  text-align: center; }
 
 i {
   margin-bottom: 5px; }

@@ -6,7 +6,7 @@
 }
 
 // IMPORTACION DE VARIABLES
-@import './variables/fonts';
+@import './variables/fontsandmore';
 
 // APLICANDO FUENTE PRINCIPAL A TODO
 * {
@@ -16,6 +16,7 @@
 // IMPORTACION DE SECCIONES
 @import './secciones/footer';
 @import './secciones/header';
+@import './secciones/subheader';
 
 // IMPORTACION DE PAGINAS
 @import './views/index';
