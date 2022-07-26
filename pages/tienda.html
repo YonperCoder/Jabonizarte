@@ -1,102 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="jabones, jabones artesanales, jabones naturales, natural, artesanal, ecológico, comprar, packs de jabones">
-    <meta name="description" content="Pasate por nuestra tienda online y disfruta los beneficios del jabón natural y ecológico con ingredientes orgánicos.">
-    <link rel="shortcut icon" href="../img/shortcut.png">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/d9a0db298f.js" crossorigin="anonymous"></script>
-    <title>Jabonizarte | Tienda</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="jabones, jabones artesanales, jabones naturales, natural, artesanal, ecológico, comprar, packs de jabones">
+  <meta name="description"
+    content="Pasate por nuestra tienda online y disfruta los beneficios del jabón natural y ecológico con ingredientes orgánicos.">
+  <link rel="shortcut icon" href="../img/shortcut.png">
+  <!-- Estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous">
+  <!-- Mi CSS. Debe ir luego del estilo de bootstrap -->
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Jabonizarte | Tienda</title>
 </head>
+
 <body>
   <header class="header">
-    <nav class="nav">
-      <a href="../index.html">
-        <img src="../img/logo.png" alt="logo">
-      </a>
-      <button class="toggle" aria-label="Abrir menú">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="../pages/tienda.html" class="nav-menu-link nav-link">Tienda</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="../pages/jabonizarte.html" class="nav-menu-link nav-link">Jabonizarte</a>
-          <!-- ol: order list (lista ordenada) -->
-          <!-- <ul class="subMenu">
-                        <li>Quienes Somos</li>
-                        <li>Política de Privacidad</li>
-                    </ul> -->
-        </li>
-        <li class="nav-menu-item">
-          <a href="../pages/contacto-faq.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto-FAQ</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="../pages/micuenta.html" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/jabonizarte.html">Jabonizarte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto-faq.html">Contacto-FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/micuenta.html">Mi Cuenta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-    <main class="fondo">
-      <section class="subHeader">
-        <h1>Tienda</h1>
-      </section>        
-        <table border="2" cellpadding="10" cellspacing="5">
-            <tr>
-                <td>Lavanda</td>
-                <td>Rosas</td>
-                <td>Café</td>
-            </tr>
-            <tr>
-                <td>Almendras</td>
-                <td>Cúrcuma</td>
-                <td>Coco</td>
-            </tr>
-        </table>
-    </main>
-    
-    <footer class="footer">
-      <nav>
-        <ul class="flex">
-          <li>
-            <a href="https://wa.me/094732477" target="_blank">WhatsApp</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/jabonizarte/" target="_blank">Instagram</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/jabonizarte.shop" target="_blank">Facebook</a>
-          </li>
-        </ul>
-      </nav>
+  <main class="fondo">
+    <section class="subHeader">
+      <h1>Tienda</h1>
+    </section>
 
-      <div>
-        <a href="../index.html">
-          <img src="../img/logo.png" alt="logo" />
-        </a>
+    <div class="tienda">
+      <div class="card" style="width: 18rem;">
+        <img src="../img/coc.jpg" class="card-img-top" alt="coc">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Coco</h5>
+          <h6 class="card-title">Hidratante y nutritivo</h6>
+          <hr>
+          <p class="card-text">Indicado para pieles grasas, ya que actúa eliminando a fondo las impurezas
+            de la piel.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
       </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/cur.jpg" class="card-img-top" alt="cur">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Cúrcuma</h5>
+          <h6 class="card-title">Antiséptico y antibacteriano</h6>
+          <hr>
+          <p class="card-text">Para combatir el crecimiento de las bacterias que causan el acné.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/avymi.jpg" class="card-img-top" alt="avymi">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Avena y Miel</h5>
+          <h6 class="card-title">Emoliente y embellecedor</h6>
+          <hr>
+          <p class="card-text">Sus ingredientes se mexclan en armonía suave y delicada, donde tu piel será la principal beneficiada.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+    </div>
 
-      <nav>
-        <ul class="flex">
-            <li>
-                <a href="https://es.wikipedia.org/wiki/Dinero_en_efectivo" target="_blank">Efectivo</a>
-              </li>
-              <li>
-                <a href="https://www.mercadopago.com.uy/c/pagar-online-con-mercadopago" target="_blank">Mercado Pago</a>
-              </li>
-              <li>
-                <a href="https://es.wikipedia.org/wiki/Transferencia_bancaria" target="_blank">Transferencia Bancaria</a>
-              </li>
-        </ul>
+    <div class="tienda">
+      <div class="card" style="width: 18rem;">
+        <img src="../img/caf.jpg" class="card-img-top" alt="caf">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Café con Almendras</h5>
+          <h6 class="card-title">Exfoliación profunda y natural</h6>
+          <hr>
+          <p class="card-text">Potente y rico en antioxidantes. Excelente para contribuir a mantener la piel joven y fresca.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/lav.jpg" class="card-img-top" alt="lav">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Lavanda</h5>
+          <h6 class="card-title">Antiestrés y relajante</h6>
+          <hr>
+          <p class="card-text">Ideal para la última ducha antes de irse a la cama luego de un largo día. Recomendado para todo tipo de pieles.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/ros.jpg" class="card-img-top" alt="ros">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Rosas</h5>
+          <h6 class="card-title">Calmante y humectante</h6>
+          <hr>
+          <p class="card-text">Recomendado para pieles sensibles y delicadas gracias a sus atributos hidratantes y purificantes.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tienda">
+      <div class="card" style="width: 18rem;">
+        <img src="../img/alm.jpg" class="card-img-top" alt="alm">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Almendras</h5>
+          <h6 class="card-title">Exfoliante y suavizante</h6>
+          <hr>
+          <p class="card-text">Perfecto para las pieles mas sensibles, ya que aporta elasticidad e hidratación.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/cac.jpg" class="card-img-top" alt="cac">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Cacao</h5>
+          <h6 class="card-title">Antioxidante y estimulante</h6>
+          <hr>
+          <p class="card-text">Jabón de aroma suave y relajante, es un excelente hidratante que facilitará el drenaje de tu piel.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="../img/cal.jpg" class="card-img-top" alt="cal">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Jabón de Caléndula</h5>
+          <h6 class="card-title">Antiinflamatorio y regenerativo</h6>
+          <hr>
+          <p class="card-text">Este jabón te ayudará a formar una barrera protectora en la piel, manteniendo la temperatura y funcionamiento de la mísma.</p>
+          <a href="#" class="btn btn-success">Lo quiero</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="d-flex list-unstyled justify-content-center align-items-center ">
+        <!-- Pagos -->
+        <li>
+          <a href="https://es.wikipedia.org/wiki/Dinero_en_efectivo" target="_blank"><button type="button"
+              class="btn btn-success">Efectivo</button></a>
+          <a href="https://www.mercadopago.com.uy/c/pagar-online-con-mercadopago" target="_blank"><button type="button"
+              class="btn btn-success">Mercado Pago</button></a>
+          <a href="https://es.wikipedia.org/wiki/Transferencia_bancaria" target="_blank"><button type="button"
+              class="btn btn-success">Transferencia</button></a>
+        </li>
+        <!-- Logo -->
+        <a href="../index.html" class="d-flex justify-content-center align-items-center">
+          <img src="../img/logo.png" alt="logo">
+        </a>
+        <!-- Redes -->
+        <li>
+          <a href="https://www.facebook.com/jabonizarte.shop" target="_blank"><button type="button"
+              class="btn btn-success">Facebook</button></a>
+          <a href="https://www.instagram.com/jabonizarte/" target="_blank"><button type="button"
+              class="btn btn-success">Instagram</button></a>
+          <a href="https://wa.me/094732477" target="_blank"><button type="button"
+              class="btn btn-success">WhatsApp</button></a>
+        </li>
       </nav>
-    </footer>
+    </div>
+  </footer>
 </body>
+
 </html>

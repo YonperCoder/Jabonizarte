@@ -3,10 +3,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 70vh;
 }
 
 i {
     margin-bottom: 5px;
+}
+
+.subHeader {
+    flex-direction: column;
+    align-items: center;
 }
 
 .gridOptions {

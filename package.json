@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.19"
   },
   "name": "clasesass",
   "version": "1.0.0",
@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "description": "//COMO EMPEZAR A COMPILAR SASS//",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YonperCoder/Jabonizarte.git"
@@ -22,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/YonperCoder/Jabonizarte/issues"
   },
-  "homepage": "https://github.com/YonperCoder/Jabonizarte#readme"
+  "homepage": "https://github.com/YonperCoder/Jabonizarte#readme",
+  "devDependencies": {}
 }

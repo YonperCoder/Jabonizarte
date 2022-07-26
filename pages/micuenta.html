@@ -5,53 +5,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="jabones, jabones artesanales, jabones naturales, natural, artesanal, ecológico, usuario, pedidos, dirección">
+  <meta name="keywords"
+    content="jabones, jabones artesanales, jabones naturales, natural, artesanal, ecológico, usuario, pedidos, dirección">
   <meta name="description" content="Bienvenido a tu panel. Acá podés gestionar tus pedidos, favoritos y mucho más.">
   <link rel="shortcut icon" href="../img/shortcut.png">
+  <!-- Estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous">
+  <!-- Mi CSS. Debe ir luego del estilo de bootstrap -->
   <link rel="stylesheet" href="../css/style.css">
+  <!--  Iconos -->
   <script src="https://kit.fontawesome.com/d9a0db298f.js" crossorigin="anonymous"></script>
   <title>Jabonizarte | Mi Cuenta</title>
 </head>
 
 <body>
   <header class="header">
-    <nav class="nav">
-      <a href="../index.html">
-        <img src="../img/logo.png" alt="logo">
-      </a>
-      <button class="toggle" aria-label="Abrir menú">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="../pages/tienda.html" class="nav-menu-link nav-link">Tienda</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="../pages/jabonizarte.html" class="nav-menu-link nav-link">Jabonizarte</a>
-          <!-- ol: order list (lista ordenada) -->
-          <!-- <ul class="subMenu">
-                        <li>Quienes Somos</li>
-                        <li>Política de Privacidad</li>
-                    </ul> -->
-        </li>
-        <li class="nav-menu-item">
-          <a href="../pages/contacto-faq.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto-FAQ</a>
-        </li>
-        <li class="nav-menu-item">
-          <a href="../pages/micuenta.html" class="nav-menu-link nav-link nav-menu-link_active">Mi Cuenta</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/jabonizarte.html">Jabonizarte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto-faq.html">Contacto-FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../pages/micuenta.html">Mi Cuenta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main class="micuenta">
-    <section class="subHeader micuenta">
+    <section class="subHeader">
       <h1>Mi Cuenta</h1>
       <h2>Bienvenid@</h2>
-    </section>    
+    </section>
     <section class="gridOptions">
       <div class="esc btnCuenta"><i class="fa-solid fa-desktop"></i> <br> Escritorio</div>
       <div class="dir btnCuenta"><i class="fa-solid fa-address-book"></i> <br> Direcciones</div>
@@ -62,39 +69,32 @@
   </main>
 
   <footer class="footer">
-    <nav>
-      <ul class="flex">
+    <div class="container">
+      <nav class="d-flex list-unstyled justify-content-center align-items-center ">
+        <!-- Pagos -->
         <li>
-          <a href="https://wa.me/094732477" target="_blank">WhatsApp</a>
+          <a href="https://es.wikipedia.org/wiki/Dinero_en_efectivo" target="_blank"><button type="button"
+              class="btn btn-success">Efectivo</button></a>
+          <a href="https://www.mercadopago.com.uy/c/pagar-online-con-mercadopago" target="_blank"><button type="button"
+              class="btn btn-success">Mercado Pago</button></a>
+          <a href="https://es.wikipedia.org/wiki/Transferencia_bancaria" target="_blank"><button type="button"
+              class="btn btn-success">Transferencia</button></a>
         </li>
+        <!-- Logo -->
+        <a href="../index.html" class="d-flex justify-content-center align-items-center">
+          <img src="../img/logo.png" alt="logo">
+        </a>
+        <!-- Redes -->
         <li>
-          <a href="https://www.instagram.com/jabonizarte/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/jabonizarte.shop" target="_blank"><button type="button"
+              class="btn btn-success">Facebook</button></a>
+          <a href="https://www.instagram.com/jabonizarte/" target="_blank"><button type="button"
+              class="btn btn-success">Instagram</button></a>
+          <a href="https://wa.me/094732477" target="_blank"><button type="button"
+              class="btn btn-success">WhatsApp</button></a>
         </li>
-        <li>
-          <a href="https://www.facebook.com/jabonizarte.shop" target="_blank">Facebook</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div>
-      <a href="../index.html">
-        <img src="../img/logo.png" alt="logo" />
-      </a>
+      </nav>
     </div>
-
-    <nav>
-      <ul class="flex">
-        <li>
-          <a href="https://es.wikipedia.org/wiki/Dinero_en_efectivo" target="_blank">Efectivo</a>
-        </li>
-        <li>
-          <a href="https://www.mercadopago.com.uy/c/pagar-online-con-mercadopago" target="_blank">Mercado Pago</a>
-        </li>
-        <li>
-          <a href="https://es.wikipedia.org/wiki/Transferencia_bancaria" target="_blank">Transferencia Bancaria</a>
-        </li>
-      </ul>
-    </nav>
   </footer>
 </body>
 
