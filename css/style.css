@@ -247,6 +247,10 @@ main {
   .tienda .fw-semibold {
     color: #044104; }
 
+@media (max-width: 992px) {
+  .tienda {
+    flex-direction: column; } }
+
 /* ----------------------- MI-CUENTA-MAIN ----------------------*/
 .micuenta {
   display: flex;
